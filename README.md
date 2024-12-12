@@ -1,4 +1,4 @@
-##Image SuperResolution Using Machine Learning.
+## Image SuperResolution Using Machine Learning.
 
 ## Models to implment:
 1. Forest Based SISR (have code)
