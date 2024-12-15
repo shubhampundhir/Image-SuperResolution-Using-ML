@@ -65,13 +65,31 @@ Advantages: Allows flexibility in patch size and improves channel-specific recon
 <div align="justify"> Utilizes kernels to handle complex, high-dimensional data.<br>
 1. Predicts pixel values for each RGB channel independently.<br></div>
 
-###3.2 Random Forest Regressor
+### 3.2 Random Forest Regressor
 <div align="justify"> 1. Trained on LR-HR patch pairs.<br>
 2. Handles patch-based mapping for each RGB channel.<br> </div>
    
 ### 3.3 Random Forest Super-Resolution (RFSR)
 <div align="justify"> 1. Uses a residual learning approach to predict the missing fine details (edges, textures).<br>
 2. Targets only the Y-channel (structural details) in the YCbCr color space.Employs Random Forest Regressors trained on residual patches for enhancement.<br> </div>
+
+## 4. Analysis
+### 4.1 Metrics:<br>
+<div align="justify"> SSIM for structural quality, MAE for pixel error.<br></div>
+
+### 4.2 Performance:<br>
+<div align="justify"> RFSR excels in edges, SVMs in color precision, and Random Forest regression in consistency.<br></div>
+
+<p float="left">
+ <img src="isr_images/isr05.jpg" alt="Image" width="600" />
+  
+</p>
+
+### 4.3 Challenges:<br>
+<div align="justify"> Minor artifacts from patch reconstruction; occasional color mismatches in YCbCr conversion. Periodic diagonal streaks appear on the predicted HR patches due to crude pixel features.<br></div>
+
+## 6. Conclusion and Future Scope:
+<div align="justify"> This study highlights the efficacy of machine learning approaches in ISR, outperforming traditional bicubic interpolation in both visual quality and numerical metrics. The patch-based methods (RFSR and Random Forest regression) exhibited high structural integrity, while SVMs excelled in color consistency.</div>
 
 
 
