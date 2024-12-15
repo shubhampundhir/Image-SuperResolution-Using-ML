@@ -1,7 +1,7 @@
 ## Image SuperResolution Using Machine Learning.
 
 <p float="left">
-<!--  <img src="images/seg_model.png" alt="Image" width="600" /> -->
+ <img src="isr_images/isr01.jpg" alt="Image" width="600" />
   
 </p>
 
