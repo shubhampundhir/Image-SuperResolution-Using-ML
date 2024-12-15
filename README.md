@@ -9,10 +9,10 @@
 </p>
 
 
-## I. Dataset Description:
+## 1.1. Dataset Description:
 <div align="justify">The dataset consists of paired 50 low-resolution (LR) and 50 high-resolution (HR) images. LR images are smaller in size and lack fine details, while HR images serve as the target for reconstruction. Each image is divided into patches for training and prediction, with LR patches flattened as input features and HR center pixels used as targets.</div>
 
-## II. EDA:
+## 1.2. EDA:
 <p float="left">
  <img src="isr_images/isr02.jpg" alt="Image" width="600" />
   
@@ -59,6 +59,19 @@ Advantages: Allows flexibility in patch size and improves channel-specific recon
 1. Extract LR and HR patch pairs (Pi = (Li, Hi))<br>
 2. Train regressors to predict HR patches from LR inputs.<br>
 3. Reconstruct HR images by combining predicted patches.<br></div>
+
+## 3. Models
+### 3.1 Support Vector Machines (SVM)
+<div align="justify"> Utilizes kernels to handle complex, high-dimensional data.
+1. Predicts pixel values for each RGB channel independently.</div>
+
+###3.2 Random Forest Regressor
+<div align="justify"> 1. Trained on LR-HR patch pairs.
+2. Handles patch-based mapping for each RGB channel.</div>
+   
+### 3.3 Random Forest Super-Resolution (RFSR)
+<div align="justify"> 1. Uses a residual learning approach to predict the missing fine details (edges, textures).
+2. Targets only the Y-channel (structural details) in the YCbCr color space.Employs Random Forest Regressors trained on residual patches for enhancement.</div>
 
 
 
