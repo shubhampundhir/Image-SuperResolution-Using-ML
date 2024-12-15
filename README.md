@@ -1,3 +1,4 @@
+<div style="text-align: justify;">
 ## Image SuperResolution(ISR) using Random Forest Regressor(RFSR) and Support Vector Regressor(SVR) Machine learning Models:-
 
 ## 1. Problem Statement
@@ -53,4 +54,4 @@ A patch-based learning approach where overlapping patches are used to train Rand
    2. [code](https://github.com/jshermeyer/RFSR)
 2. [optional] Local Regression Based SISR (need to code; will be easy)
    1. [paper](papers/local_regression.pdf)
-
+</div>
