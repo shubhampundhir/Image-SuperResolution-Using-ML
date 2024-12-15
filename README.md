@@ -62,16 +62,16 @@ Advantages: Allows flexibility in patch size and improves channel-specific recon
 
 ## 3. Models
 ### 3.1 Support Vector Machines (SVM)
-<div align="justify"> Utilizes kernels to handle complex, high-dimensional data.
-1. Predicts pixel values for each RGB channel independently.</div>
+<div align="justify"> Utilizes kernels to handle complex, high-dimensional data.<br>
+1. Predicts pixel values for each RGB channel independently.<br></div>
 
 ###3.2 Random Forest Regressor
-<div align="justify"> 1. Trained on LR-HR patch pairs.
-2. Handles patch-based mapping for each RGB channel.</div>
+<div align="justify"> 1. Trained on LR-HR patch pairs.<br>
+2. Handles patch-based mapping for each RGB channel.<br> </div>
    
 ### 3.3 Random Forest Super-Resolution (RFSR)
-<div align="justify"> 1. Uses a residual learning approach to predict the missing fine details (edges, textures).
-2. Targets only the Y-channel (structural details) in the YCbCr color space.Employs Random Forest Regressors trained on residual patches for enhancement.</div>
+<div align="justify"> 1. Uses a residual learning approach to predict the missing fine details (edges, textures).<br>
+2. Targets only the Y-channel (structural details) in the YCbCr color space.Employs Random Forest Regressors trained on residual patches for enhancement.<br> </div>
 
 
 
