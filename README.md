@@ -1,5 +1,10 @@
 ## Image SuperResolution Using Machine Learning.
 
+<p float="left">
+<!--  <img src="images/seg_model.png" alt="Image" width="600" /> -->
+  
+</p>
+
 ## Models to implment:
 1. Forest Based SISR (have code)
    1. [paper](papers/random_forests.pdf)
