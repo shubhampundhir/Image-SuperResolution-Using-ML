@@ -23,25 +23,29 @@ Figure 1. (Distributions of images - Denoising)
 
 ### 2.1 Random Forest Based Super-Resolution (RFSR) on Y-channel:
 <div align="justify"> This methodology applies residual learning to reconstruct the difference between bicubic-upscaled LR images and their HR counterparts:<br>
-•Preprocessing: Convert images to the YCbCr colorspace, focusing on the Y-channel for structural details.<br>
-•Patch Extraction: Overlapping LR and HR patches are paired, and bicubic interpolation is used to match dimensions.<br>
-•Model Training: A Random Forest Regressor predicts residual patches for the Y-channel.<br>
-•Output:Combine predicted residuals with bicubic-upscaled patches to generate HR images.<br></div>
+
+1. Preprocessing: Convert images to the YCbCr colorspace, focusing on the Y-channel for structural details.<br>
+2. Patch Extraction: Overlapping LR and HR patches are paired, and bicubic interpolation is used to match dimensions.<br>
+3. Model Training: A Random Forest Regressor predicts residual patches for the Y-channel.<br>
+4. Output:Combine predicted residuals with bicubic-upscaled patches to generate HR images.<br></div>
 
 ### 2.2 Patch-Based ISR Using Support Vector Machines (SVMs):
 <div align="justify">This approach focuses on reconstructing HR images channel-wise using SVM models:<br>
 Steps:<br>
-1.Extract and normalize LR and HR patches.<br>
-2.Train SVM models for individual RGB channels.<br>
-3.Predict HR patches using the trained models.<br>
-4.Combine channel-wise predictions to reconstruct HR images.<br>
+ 
+1. Extract and normalize LR and HR patches.<br>
+2. Train SVM models for individual RGB channels.<br>
+3. Predict HR patches using the trained models.<br>
+4. Combine channel-wise predictions to reconstruct HR images.<br>
+
 Advantages: Allows flexibility in patch size and improves channel-specific reconstructions.<br> </div>
 
 ### 2.3 Patch-Based Regression with Random Forests:
 <div align="justify"> A patch-based learning approach where overlapping patches are used to train Random Forest regressors for each color channel (R, G, B):<br>
-1.Extract LR and HR patch pairs (Pi = (Li, Hi))<br>
-2.Train regressors to predict HR patches from LR inputs.<br>
-3.Reconstruct HR images by combining predicted patches.<br></div>
+
+1. Extract LR and HR patch pairs (Pi = (Li, Hi))<br>
+2. Train regressors to predict HR patches from LR inputs.<br>
+3. Reconstruct HR images by combining predicted patches.<br></div>
 
 
 
