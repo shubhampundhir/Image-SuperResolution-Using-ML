@@ -98,12 +98,13 @@ Advantages: Allows flexibility in patch size and improves channel-specific recon
 </p>
 
 
+## 7. References
+1. Ni, Karl S. and Truong Q. Nguyen. “Image Super resolution Using Support Vector Regression.” IEEE Transactions on Image Processing 16 (2007): 1596-1610.
+2. L. An and B. Bhanu, "Improved image super-resolution by Support Vector Regression," The 2011 International Joint Conference on Neural Networks, San Jose, CA, USA, 2011, pp. 696-700, doi: 10.1109/IJCNN.2011.6033289.
+3. Jianchao Yang, J. Wright, T. Huang and Yi Ma, "Image super-resolution as sparse representation of raw image patches," 2008 IEEE Conference on Computer Vision and Pattern Recognition, Anchorage, AK, USA, 2008, pp. 1-8, doi: 10.1109/CVPR.2008.4587647.
+4. Ni, Karl S. and Truong Q. Nguyen. “Image Superresolution Using Support Vector Regression.” IEEE Transactions on Image Processing 16 (2007): 1596-1610.
+5. Jianchao Yang, Student Member, IEEE, John Wright, Member, IEEE, Thomas S. Huang, Fellow, IEEE, and Yi Ma, Senior Member, IEEE.
+6. H. Li, K.-M. Lam, and M. Wang, "Image Super-resolution via Feature-augmented Random Forest," Pattern Recognition
+Letters, vol. 108, pp. 31–37, 2018, doi: 10.1016/j.patrec.2018.01.014
 
-
-## Models to implment:
-1. Forest Based SISR (have code)
-   1. [paper](papers/random_forests.pdf)
-   2. [code](https://github.com/jshermeyer/RFSR)
-2. [optional] Local Regression Based SISR (need to code; will be easy)
-   1. [paper](papers/local_regression.pdf)
 
