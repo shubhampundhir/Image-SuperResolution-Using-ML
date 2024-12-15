@@ -8,6 +8,7 @@
   
 </p>
 
+
 ## I. Dataset Description:
 <div align="justify">The dataset consists of paired 50 low-resolution (LR) and 50 high-resolution (HR) images. LR images are smaller in size and lack fine details, while HR images serve as the target for reconstruction. Each image is divided into patches for training and prediction, with LR patches flattened as input features and HR center pixels used as targets.</div>
 
@@ -29,6 +30,12 @@ Figure 1. (Distributions of images - Denoising)
 3. Model Training: A Random Forest Regressor predicts residual patches for the Y-channel.<br>
 4. Output:Combine predicted residuals with bicubic-upscaled patches to generate HR images.<br></div>
 
+<p float="left">
+ <img src="isr_images/isr03.jpg" alt="Image" width="600" />
+  
+</p>
+
+
 ### 2.2 Patch-Based ISR Using Support Vector Machines (SVMs):
 <div align="justify">This approach focuses on reconstructing HR images channel-wise using SVM models:<br>
 Steps:<br>
@@ -39,6 +46,12 @@ Steps:<br>
 4. Combine channel-wise predictions to reconstruct HR images.<br>
 
 Advantages: Allows flexibility in patch size and improves channel-specific reconstructions.<br> </div>
+
+<p float="left">
+ <img src="isr_images/isr04.jpg" alt="Image" width="600" />
+  
+</p>
+
 
 ### 2.3 Patch-Based Regression with Random Forests:
 <div align="justify"> A patch-based learning approach where overlapping patches are used to train Random Forest regressors for each color channel (R, G, B):<br>
