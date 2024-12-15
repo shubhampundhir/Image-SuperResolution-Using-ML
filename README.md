@@ -1,9 +1,9 @@
  ## Image SuperResolution(ISR) using Random Forest Regressor(RFSR) and Support Vector Regressor(SVR) Machine learning Models:-
 
 ## 1. Problem Statement
-<div style="text-align: justify;">
+<h1 align="center">
 Image super-resolution (ISR) focuses on enhancing low-resolution (LR) images into high-resolution (HR) counterparts. This study explores three distinct machine learning approaches: residual learning with Random Forest (RFSR), channel-wise super-resolution using Support Vector Machines (SVMs), and patch-based Random Forest regression. These methods aim to address the challenge of reconstructing fine details like edges and textures in LR images while evaluating performance using metrics such as Structural Similarity Index (SSIM) and Mean Absolute Error (MAE).
-</div>
+</h1>
 
 <p float="left">
  <img src="isr_images/isr01.jpg" alt="Image" width="600" />
