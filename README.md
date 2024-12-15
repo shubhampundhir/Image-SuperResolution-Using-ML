@@ -92,6 +92,11 @@ Advantages: Allows flexibility in patch size and improves channel-specific recon
 <div align="justify"> This study highlights the efficacy of machine learning approaches in ISR, outperforming traditional bicubic interpolation in both visual quality and numerical metrics. The patch-based methods (RFSR and Random Forest regression) exhibited high structural integrity, while SVMs excelled in color consistency.</div>
 
 
+<p float="left">
+ <img src="isr_images/isr06.jpg" alt="Image" width="600" />
+  
+</p>
+
 
 
 
